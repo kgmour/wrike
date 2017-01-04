@@ -113,7 +113,12 @@ while run:
 					print e
 					break
 				if 'data' in task_folder_dict:
-					if (task_folder_dict['data'][0]['title'] != 'Integration Services' and task_folder_dict['data'][0]['title'] != 'Content Services' and task_folder_dict['data'][0]['title'] != 'Security Services' and task_folder_dict['data'][0]['title'] != 'Reporting Services' and task_folder_dict['data'][0]['title'] != 'Professional Services') or task_folder_dict['data'][0]['title'] == None:
+					if (task_folder_dict['data'][0]['title'] != 'Integration Services'\ 
+					    and task_folder_dict['data'][0]['title'] != 'Content Services'\
+					    and task_folder_dict['data'][0]['title'] != 'Security Services'\
+					    and task_folder_dict['data'][0]['title'] != 'Reporting Services'\
+					    and task_folder_dict['data'][0]['title'] != 'Professional Services')\
+					or task_folder_dict['data'][0]['title'] == None:
 						continue
 					else:
 						pass
